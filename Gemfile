@@ -8,5 +8,5 @@ group :development, :test do
   gem 'redcarpet', platform: :ruby
   gem 'yard'
   gem 'mail'
-  gem 'rubygems-tasks', git: 'https://github.com/postmodern/rubygems-tasks.git', platform: :ruby
+  gem 'rubygems-tasks', git: 'https://github.com/postmodern/rubygems-tasks', branch: "main", platform: :ruby
 end

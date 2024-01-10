@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/granicus/govdelivery-tms-ruby.svg?branch=master)](https://travis-ci.org/granicus/govdelivery-tms-ruby)
-
 TMS Client
 ===========
 This is a reference Ruby client to interact with the GovDelivery TMS REST API.
@@ -422,4 +420,4 @@ bundle exec rake
 
 Compatibility
 -------------
-This project is tested and compatible with Ruby >=2.5.8, and <= 2.7.1.
+This project is tested and compatible with Ruby 3.2.2.

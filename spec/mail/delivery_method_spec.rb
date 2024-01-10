@@ -23,12 +23,12 @@ describe GovDelivery::TMS::Mail::DeliveryMethod do
     end
 
     it 'should get sent' do
-      expect(email_messages).to receive(:build).with(
+      expect(email_messages).to receive(:build).with({
         from_name:  mail[:from].display_names.first,
         from_email: mail.from.first,
         subject:    mail.subject,
         body:       '<blink>HI</blink>'
-      ).and_return(tms_message)
+      }).and_return(tms_message)
       expect(tms_message).to receive(:post!).and_return(true)
 
       subject.deliver!(mail)
@@ -45,10 +45,10 @@ describe GovDelivery::TMS::Mail::DeliveryMethod do
     end
 
     it 'should get sent' do
-      expect(email_messages).to receive(:build).with(
+      expect(email_messages).to receive(:build).with({
         subject: mail.subject,
         body:    '<blink>HI</blink>'
-      ).and_return(tms_message)
+      }).and_return(tms_message)
       expect(tms_message).to receive(:post!).and_return(true)
 
       subject.deliver!(mail)
@@ -70,12 +70,12 @@ describe GovDelivery::TMS::Mail::DeliveryMethod do
     end
 
     it 'should send' do
-      expect(email_messages).to receive(:build).with(
+      expect(email_messages).to receive(:build).with({
         from_name:  mail[:from].display_names.first,
         from_email: mail.from.first,
         subject:    mail.subject,
         body:       '<blink>HTML</blink>'
-      ).and_return(tms_message)
+      }).and_return(tms_message)
       expect(tms_message).to receive(:post!).and_return(true)
 
       subject.deliver!(mail)
