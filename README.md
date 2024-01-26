@@ -1,3 +1,9 @@
+# THIS IS A FORK OF govdelivery-tms-ruby v3.0
+
+Department of Veterans Affairs / Vets API forked [govdelivery-tms-ruby](https://github.com/Granicus/govdelivery-tms-ruby) due to the internal need of updating for Faraday 2.0+. Other changes are noted in the CHANGELOG and git history.
+
+The original README is below:
+
 TMS Client
 ===========
 This is a reference Ruby client to interact with the GovDelivery TMS REST API.

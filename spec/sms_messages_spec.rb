@@ -8,7 +8,8 @@ describe GovDelivery::TMS::SmsMessages do
       { short_body: 'hi ho', created_at: 'a while ago' },
       { short_body: 'hello', created_at: 'longer ago' },
       { short_body: 'yo', created_at: 'even longer ago' }
-      ]}
+      ]
+    }
 
     before do
       @messages = GovDelivery::TMS::SmsMessages.new(client, href)

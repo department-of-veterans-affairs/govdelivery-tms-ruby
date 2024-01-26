@@ -11,3 +11,4 @@ doc
 vendor
 .idea
 coverage
+Gemfile.lock
