@@ -8,7 +8,8 @@ describe GovDelivery::TMS::EmailMessages do
         { subject: 'hello', body: 'greetings from places', created_at: 'a while ago' },
         { subject: 'hi!', body: 'feel me flow', created_at: 'longer ago' },
         { subject: 'yo', body: 'I am not a robot', created_at: 'even longer ago' }
-        ]}
+        ]
+    }
     
     before do
       @messages = GovDelivery::TMS::EmailMessages.new(client, href)
