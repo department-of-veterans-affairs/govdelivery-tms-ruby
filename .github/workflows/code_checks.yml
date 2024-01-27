@@ -1,0 +1,43 @@
+name: Code Checks
+
+on: [push]
+
+jobs:
+  linting_and_security:
+    name: Linting and Security
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby-version: ['3.2']
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby-version }}
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+
+      - name: Run bundle-audit (checks gems for CVE issues)
+        run:  bundle exec bundle-audit check --update
+
+      - name: Lint code with Rubocop
+        run: bundle exec rubocop --parallel --format github
+
+  specs:
+    name: Specs
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby-version: ['3.2']
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby-version }}
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+
+      - name: Run Specs
+        run: bundle exec rspec --format progress -o /tmp/rspec/rspec.xml
