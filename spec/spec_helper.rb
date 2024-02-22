@@ -2,6 +2,7 @@ $LOAD_PATH << File.expand_path('../lib', __FILE__)
 
 require 'simplecov'
 require 'simplecov-cobertura'
+require 'active_support/all'
 
 SimpleCov.formatter = SimpleCov::Formatter::CoberturaFormatter
 SimpleCov.start { add_filter "/spec/" }

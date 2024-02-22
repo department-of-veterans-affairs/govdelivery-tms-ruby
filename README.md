@@ -1,4 +1,8 @@
-[![Build Status](https://travis-ci.org/granicus/govdelivery-tms-ruby.svg?branch=master)](https://travis-ci.org/granicus/govdelivery-tms-ruby)
+# THIS IS A FORK OF govdelivery-tms-ruby v3.0
+
+Department of Veterans Affairs / Vets API forked [govdelivery-tms-ruby](https://github.com/Granicus/govdelivery-tms-ruby) due to the internal need of updating for Faraday 2.0+. Other changes are noted in the CHANGELOG and git history.
+
+The original README is below:
 
 TMS Client
 ===========
@@ -422,4 +426,4 @@ bundle exec rake
 
 Compatibility
 -------------
-This project is tested and compatible with Ruby >=2.5.8, and <= 2.7.1.
+This project is tested and compatible with Ruby 3.2.2.

@@ -1,5 +1,5 @@
 module GovDelivery::TMS #:nodoc:
-  class Logger < Faraday::Response::Middleware #:nodoc:
+  class Logger < Faraday::Response::Logger #:nodoc:
     extend Forwardable
 
     def initialize(app, logger = nil)

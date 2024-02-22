@@ -6,7 +6,6 @@ end
 require 'active_support/core_ext/hash'
 require 'govdelivery/tms/version'
 require 'faraday'
-require 'faraday_middleware'
 
 require 'govdelivery/tms/link_header'
 require 'govdelivery/tms/util/hal_link_parser'
