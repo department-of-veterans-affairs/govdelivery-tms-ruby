@@ -4,6 +4,10 @@ suggested by [How to use a CHANGELOG](http://keepachangelog.com/).
 
 As of version 3.0.0 this project adheres to [Semantic Versioning](http://semver.org/).
 
+##[4.1.0]
+### Changed
+- Allow ActiveSupport <9.0.0
+
 ##[4.0.0]
 ### Changed
 - Remove ActiveSupport <6.0.0 restriction
