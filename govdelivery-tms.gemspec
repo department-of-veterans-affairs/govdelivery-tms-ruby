@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
                      to interact with GovDelivery's TMS API. The client is
                      compatible with Ruby 3. This is a fork of govdelivery-tms"
 
-  s.add_runtime_dependency 'activesupport', '>=5.2.4.3', '<8.0.0'
+  s.add_runtime_dependency 'activesupport', '>=5.2.4.3', '<9.0.0'
   s.add_runtime_dependency 'faraday'
   s.add_runtime_dependency 'mime-types'
   s.add_development_dependency 'simplecov'
