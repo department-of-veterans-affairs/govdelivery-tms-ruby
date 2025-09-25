@@ -5,23 +5,23 @@ require:
 
 inherit_from: .rubocop_todo.yml
 
-Metrics/LineLength:
-  Enabled: false
 Documentation:
   Enabled: false
-Style/ClassAndModuleChildren:
-  Enabled: false
-Style/FileName:
-  Enabled: false
-Metrics/CyclomaticComplexity:
+Layout/LineLength:
   Enabled: false
 Metrics/AbcSize:
   Enabled: false
-Style/RaiseArgs:
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Metrics/MethodLength:
+  Max: 20
+Naming/AccessorMethodName:
+  Enabled: false
+Naming/FileName:
+  Enabled: false
+Style/ClassAndModuleChildren:
   Enabled: false
 Style/DoubleNegation:
   Enabled: false
-Style/MethodLength:
-  Max: 20
-Style/AccessorMethodName:
+Style/RaiseArgs:
   Enabled: false
