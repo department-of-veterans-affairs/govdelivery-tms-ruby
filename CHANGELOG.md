@@ -4,22 +4,22 @@ suggested by [How to use a CHANGELOG](http://keepachangelog.com/).
 
 As of version 3.0.0 this project adheres to [Semantic Versioning](http://semver.org/).
 
-##[4.2.0]
+## [4.2.0]
 ### Changed
 - Relax Ruby version constraint to >= 2.7.3
 
-##[4.1.0]
+## [4.1.0]
 ### Changed
 - Allow ActiveSupport <9.0.0
 
-##[4.0.0]
+## [4.0.0]
 ### Changed
 - Remove ActiveSupport <6.0.0 restriction
 - Add ruby 3+ support 
 - Upgrade to faraday v2.8.1
 - Remove faraday_middleware
 
-##[3.0.0]
+## [3.0.0]
 ### Changed
 - Upgrading to ActiveSupport 5.2.4.3
 - Gem now supports only Ruby versions >= 2.5.0 and <= 2.7.1
