@@ -1,17 +1,17 @@
-require:
+plugins:
   - rubocop-rake
   - rubocop-rspec
   - rubocop-thread_safety
 
 inherit_from: .rubocop_todo.yml
 
-Metrics/LineLength:
+Layout/LineLength:
   Enabled: false
-Documentation:
+Style/Documentation:
   Enabled: false
 Style/ClassAndModuleChildren:
   Enabled: false
-Style/FileName:
+Naming/FileName:
   Enabled: false
 Metrics/CyclomaticComplexity:
   Enabled: false
@@ -21,7 +21,7 @@ Style/RaiseArgs:
   Enabled: false
 Style/DoubleNegation:
   Enabled: false
-Style/MethodLength:
+Metrics/MethodLength:
   Max: 20
-Style/AccessorMethodName:
+Naming/AccessorMethodName:
   Enabled: false

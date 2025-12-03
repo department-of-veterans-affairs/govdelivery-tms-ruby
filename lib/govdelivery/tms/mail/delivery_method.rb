@@ -1,6 +1,5 @@
 require 'govdelivery-tms'
 require 'mail'
-require 'mail/check_delivery_params'
 
 module GovDelivery::TMS
   module Mail
@@ -16,8 +15,6 @@ module GovDelivery::TMS
     #     :api_root=>'https://stage-tms.govdelivery.com'
     #     }
     class DeliveryMethod
-      include ::Mail::CheckDeliveryParams
-
       def initialize(values)
         self.settings = values
       end
