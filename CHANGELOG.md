@@ -4,9 +4,13 @@ suggested by [How to use a CHANGELOG](http://keepachangelog.com/).
 
 As of version 3.0.0 this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [4.3.0]
+### Changed
+- Relax Ruby version constraint to >= 2.7.3 to permit use in [caseflow](https://github.com/department-of-veterans-affairs/caseflow) and [efolder](https://github.com/department-of-veterans-affairs/caseflow-efolder) applications.
+
 ## [4.2.0]
 ### Changed
-- Relax Ruby version constraint to >= 2.7.3
+- Remove deprecated Mail::CheckDeliveryParams for mail 2.9.0+ compatibility
 
 ## [4.1.0]
 ### Changed
