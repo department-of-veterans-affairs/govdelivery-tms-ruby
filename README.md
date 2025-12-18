@@ -426,4 +426,7 @@ bundle exec rake
 
 Compatibility
 -------------
-This project is tested and compatible with Ruby 3.2.2.
+This project is tested and compatible with the following Ruby versions:
+- 2.7.3
+- 3.0.7
+- 3.2.2
